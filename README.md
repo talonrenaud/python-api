@@ -15,7 +15,7 @@ The latest version can always be found at http://github.com/shotgunsoftware/pyth
 ## Minimum Requirements
 
 * Shotgun server v2.4.12+.
-* Python v2.6 - v2.7.
+* Python v3.6+.
 
 ## High Performance Requirements
 
