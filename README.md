@@ -8,6 +8,9 @@
 
 # Shotgun Python API
 
+Python3 support is becoming critical as we already converted a lot of code to preemptively support upcoming vfxplatform requirements and also allow proper use of PySide2. This is an attempt at converting the Shotgun Python API to Python3+.
+This version is not backward compatible, so please do not install on Python2+, it won't work.
+
 Shotgun provides a simple Python-based API for accessing Shotgun and integrating with other tools. This is the official API that is maintained by Shotgun Software (support@shotgunsoftware.com)
 
 The latest version can always be found at http://github.com/shotgunsoftware/python-api
