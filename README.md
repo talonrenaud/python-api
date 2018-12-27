@@ -8,6 +8,7 @@
 
 # Shotgun Python API - Unofficial (Python3.6+)
 Based of version: 3.0.37
+
 Python3 support is becoming critical as we already converted a lot of code to preemptively support upcoming vfxplatform requirements and also allow proper use of PySide2. This is an attempt at converting the Shotgun Python API to Python3+.
 This version is not backward compatible, so please do not install on Python2+, it won't work.
 
