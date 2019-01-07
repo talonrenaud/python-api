@@ -45,6 +45,7 @@ import sys
 import time
 import types
 import urllib               # used for image upload
+import urllib.error
 import shutil               # used for attachment download
 import http.client          # Used for secure file upload.
 import json
@@ -3814,7 +3815,7 @@ class Shotgun(object):
             request.get_method = lambda: "PUT"
             result = opener.open(request)
             etag = result.info().getheader("ETag")
-        except urllib.HTTPError as e:
+        except urllib.error.HTTPError as e:
             if e.code == 500:
                 raise ShotgunError("Server encountered an internal error.\n%s\n%s\n\n" % (storage_url, e))
             else:
@@ -3908,7 +3909,7 @@ class Shotgun(object):
             resp = opener.open(url, params)
             result = resp.read()
             # response headers are in str(resp.info()).splitlines()
-        except urllib.HTTPError as e:
+        except urllib.error.HTTPError as e:
             if e.code == 500:
                 raise ShotgunError("Server encountered an internal error. "
                                    "\n%s\n(%s)\n%s\n\n" % (url, self._sanitize_auth_params(params), e))
