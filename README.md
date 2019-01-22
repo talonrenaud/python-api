@@ -23,7 +23,7 @@ The latest version can always be found at http://github.com/shotgunsoftware/pyth
 
 ## High Performance Requirements
 
-* Install [simplejson 2.1.6](http://pypi.python.org/pypi/simplejson/2.1.6)
+<del>* Install [simplejson 2.1.6](http://pypi.python.org/pypi/simplejson/2.1.6)</del> (built in to Python3, no needed anymore)
 
 ## Documentation
 Tutorials and detailed documentation about the Python API are available at http://developer.shotgunsoftware.com/python-api). 
