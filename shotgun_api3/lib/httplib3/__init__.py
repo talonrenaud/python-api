@@ -833,7 +833,7 @@ class HTTPSConnectionWithTimeout(http.client.HTTPSConnection):
         if (cert_file or ca_certs) and not disable_ssl_certificate_validation:
             if not hasattr(ssl, 'SSLContext'):
                 raise CertificateValidationUnsupportedInPython31()
-            context = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
+            context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
             context.verify_mode = ssl.CERT_REQUIRED
             if cert_file:
                 context.load_cert_chain(cert_file, key_file)
